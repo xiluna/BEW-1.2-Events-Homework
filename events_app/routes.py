@@ -17,7 +17,7 @@ main = Blueprint('main', __name__)
 ##########################################
 
 @main.route('/')
-def homepage():
+def index():
     """Show upcoming events to users!"""
     # TODO: Get all events and send to the template
     return render_template('index.html')
