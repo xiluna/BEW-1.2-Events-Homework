@@ -72,7 +72,7 @@ def create():
         # datetime, then add and commit to the database
 
         flash('Event created.')
-        return redirect(url_for('main.homepage'))
+        return redirect(url_for('main.index'))
     else:
         return render_template('create.html')
 
