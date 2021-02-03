@@ -26,7 +26,7 @@ class Event(db.Model):
     id = db.Column(db.Integer, primary_key=True)
 
 # TODO: Create a table `guest_event_table` with the following columns:
-# - book_id: Integer column (foreign key)
-# - genre_id: Integer column (foreign key)
+# - event_id: Integer column (foreign key)
+# - guest_id: Integer column (foreign key)
 
 guest_event_table = None
