@@ -80,7 +80,7 @@ def create():
             title=new_event_title, description=new_event_description, date_and_time=date)
 
         flash('Event created.')
-        return redirect(url_for('main.index', new_event))
+        return redirect(url_for('main.index'))
     else:
         return render_template('create.html')
 
