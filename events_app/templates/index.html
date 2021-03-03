@@ -4,11 +4,11 @@
 
 <a href="/create">+ New Event</a>
 
-{% for i in events %}
+{% for event in events %}
 <div class="event-container">
-  <h3><a href="/event/{{ i.id }}">{{ i.title }}</a></h3>
-  <p><strong>Date:</strong> {{ i.date_and_time }}</p>
-  <p><strong>Description:</strong> {{ i.description }}</p>
-  <p class="small-text">{{ i.guests | length }} Attending</p>
+  <h3><a href="/event/{{ event.id }}">{{ event.title }}</a></h3>
+  <p><strong>Date:</strong> {{ event.date_and_time }}</p>
+  <p><strong>Description:</strong> {{ event.description }}</p>
+  <p class="small-text">{{ event.guests | length }} Attending</p>
 </div>
 {% endfor %} {% endblock %}
